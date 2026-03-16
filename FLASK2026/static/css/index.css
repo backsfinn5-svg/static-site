@@ -1,0 +1,124 @@
+.section-title {
+    font-size: 1.4rem;
+    color: #e40521;
+    font-weight: 700;
+    margin: 30px 0 16px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e40521;
+}
+
+.campus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.campus {
+    background: #fff;
+    padding: 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    font-family: Arial, sans-serif;
+}
+
+.campus-location {
+    display: inline-block;
+    background-color: #e40521;
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    margin-bottom: 8px;
+}
+
+.campus-location a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.campus-header {
+    font-size: 1.4rem;
+    color: #e40521;
+    font-weight: 700;
+    margin: 4px 0 2px 0;
+    line-height: 1.2;
+}
+
+.campus-header span {
+    display: none;
+}
+
+.campus-baseline {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+.campus-middle {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.campus-logo {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.campus-logo svg,
+.campus-logo img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    background-color: #e40521;
+    padding: 8px;
+    border-radius: 4px;
+    object-fit: contain;
+}
+
+.dbzlogo,
+.dboclogo .st0 {
+    fill: #fff;
+}
+
+.campus-address {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.campus-address a {
+    color: #333;
+    text-decoration: none;
+}
+
+.campus-address a:hover {
+    text-decoration: underline;
+}
+
+.campus-info p {
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: #333;
+    font-style: italic;
+}
+
+.campus-info strong {
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .campus-grid {
+        grid-template-columns: 1fr;
+    }
+}
