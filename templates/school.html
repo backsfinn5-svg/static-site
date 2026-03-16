@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ category }} - {{ school|capitalize }}</h1>
+{% if category == 'Secundair' %}
+<p><a href="/{{ category.lower() }}/{{ school }}/finaliteiten">Finaliteiten</a></p>
+{% endif %}
+<p>Hieronder vind je informatie over de infomomenten voor {{ school }} binnen de {{ category.lower() }}.</p>
+<ul>
+  <li>Opendeurdag</li>
+  <li>Infoavond</li>
+  <li>Rondleidingen</li>
+</ul>
+<p>Gegevens komen later beschikbaar.</p>
+{% endblock %}
+

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+                            <!--stylesheet voor index pagina toevoegen.-->
+{% block page_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+                <!--introductie sectie toevoegen met een welkomstbericht.-->
+{% block intro %}
+<div class="intro">
+    <h2>Welkom bij Don Bosco</h2>
+    <p>Ontdek ons kwaliteitsonderwijs voor basisschool en secundair onderwijs.</p>
+</div>
+{% endblock %}
+                    <!--sectie voor middelbare scholen toevoegen met info over deze verschillende middelbare scholen, en deze scholen in een grid plaatsen.-->
+{% block content %}
+<h2 class="section-title">Middelbare scholen</h2>
+
+<div class="campus-grid">
+    {% include "partials/campus_sint_denijs_westrem.html" %}
+    {% include "partials/campus_zwijnaarde.html" %}
+    {% include "partials/campus_sint_pieters.html" %}
+</div>
+{% endblock %}
